@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Experience - Nur Adam</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Home</span>
+            </div>
+            <div class="links">
+                 <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="about.html">Biodata</a></div>
+                <div class="link"><a href="experiance.html">Experience</a></div>
+                <div class="link"><a href="education.html">Education</a></div>
+               
+                <div class="link contact-btn"><a href="#">Gallery</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Biodata</a>
+                <a href="experiance.html">Experience</a>
+                <a href="#">Education</a>
+                
+                <a href="#">Gallrey</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="main-container">
+            <h1>My Working Experiences</h1>
+            
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h2>Internship</h2>
+                    <p><strong>Company Name:</strong> Majlis Bandaraya Petaling Jaya</p>
+                    <p><strong>Duration:</strong> july 2024 - september 2024</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Data Entry.</li>
+                        <li>System Deveploment.</li>
+                        <li>Thecnician.</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <h2>Retail Assistent</h2>
+                    <p><strong>Company Name:</strong> Sogo</p>
+                    <p><strong>Duration:</strong> March 2023 - April 2023</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Casher.</li>
+                        <li>Store management.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>

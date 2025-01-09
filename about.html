@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About | Nur Adam</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>About</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="about.html">Biodata</a></div>
+                <div class="link"><a href="experiance.html">Experiance</a></div>
+                <div class="link"><a href="education.html">Education</a></div>
+                <div class="link contact-btn"><a href="gallery.html">Gallery</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Biodata</a>
+                <a href="experiance.html">Experiance</a>
+                <a href="education.html">Education</a>
+
+                <a href="gallery.html">Gallery</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="adam.jpg.jpeg" alt="Profile Image">
+            </div>
+            <div class="content">
+                <h1>About Me</h1>
+                <p>Welcome to my About page! Here’s a bit about me.</p>
+            
+                
+                <div class="biodata">
+                    <h3>Biodata</h3>
+                    
+                    <table style="width:100%; border: 1px solid #ccc; border-collapse: collapse;">
+                        <tr>
+                            <th style="padding: 8px; text-align: left;">Name</th>
+                            <td style="padding: 8px; text-align: left; " >Nur Adam</td>
+                        </tr>
+                        <tr>
+                            <th style="padding: 8px; text-align: left; background-color: #f4f4f4;">Birthdate</th>
+                            <td style="padding: 8px; text-align: left;">12/12/2004</td>
+                        </tr>
+                        <tr>
+                            <th style="padding: 8px; text-align: left; background-color: #f4f4f4;">Nationality</th>
+                            <td style="padding: 8px; text-align: left;">Malaysian</td>
+                        </tr>
+                        <tr>
+                            <th style="padding: 8px; text-align: left; background-color: #f4f4f4;">Religion</th>
+                            <td style="padding: 8px; text-align: left;">Muslim</td>
+                        </tr>
+                    </table>
+                    <!-- Table ends here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+
+</html>

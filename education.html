@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Education - Nur Adam</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Home</span>
+            </div>
+            <div class="links">
+                 <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="about.html">Biodata</a></div>
+                <div class="link"><a href="experiance.html">Experience</a></div>
+                <div class="link"><a href="education.html">Education</a></div>
+
+                <div class="link contact-btn"><a href="gallery.html">gallery</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Biodata</a>
+                <a href="experiance.html">Experience</a>
+                <a href="education.html">Education</a>
+               
+                <a href="gallery.html">Gallery</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Education Section -->
+    <section class="education-section">
+        <div class="main-container">
+            <h1>My Education Journey</h1>
+            
+            <div class="education-list">
+                <div class="education-item">
+                    <h2>Diploma in Information Manangement</h2>
+                    <p><strong>Institution:</strong> University Technology Mara (UITM)</p>
+                    <p><strong>Duration:</strong> 2022 - 2025</p>
+                    
+                </div>
+                
+                <div class="education-item">
+                    <h2>High School</h2>
+                    <p><strong>Institution:</strong> Sekolah Menengah Kebangsaan Kelana Jaya</p>
+                    <p><strong>Duration:</strong> 2017 - 2021</p>
+                    <p><strong>Key Subjects:</strong></p>
+                    <ul>
+                        <li>Bahasa Melayu</li>
+                        <li>Mathematic</li>
+                        <li>Account</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
